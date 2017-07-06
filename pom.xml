@@ -43,6 +43,7 @@
 			</formats>
 	    </configuration>
 	</plugin>
+	</plugins>
   </build> 
 <reporting>
     <plugins>
