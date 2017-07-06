@@ -34,7 +34,7 @@
         </configuration>
     </plugin>
 
-  	<!-- Normally, we take off the dependency report, saves time. -->
+  	 <!-- Normally, we take off the dependency report, saves time. -->
 	<plugin>
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-project-info-reports-plugin</artifactId>
