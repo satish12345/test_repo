@@ -33,27 +33,28 @@
             <target>1.8</target>
         </configuration>
     </plugin>
-
-  	 <!-- Normally, we take off the dependency report, saves time. -->
-	<plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-project-info-reports-plugin</artifactId>
-		<version>2.7</version>
-		<configuration>
-			<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-		</configuration>
-	</plugin>
-	<plugin>
+	  <plugin>
 		<groupId>org.codehaus.mojo</groupId>
 		<artifactId>cobertura-maven-plugin</artifactId>
-		<version>2.6</version>
+		<version>2.7</version>
 		<configuration>
 			<formats>
 				<format>xml</format>
 			</formats>
 	    </configuration>
 	</plugin>
-
-  </plugins>
- </build> 
+  </build> 
+<reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <version>2.7</version>
+	      <configuration>
+			<formats>
+				<format>xml</format>
+			</formats>
+      </plugin>
+    </plugins>
+  </reporting>	
 </project>
