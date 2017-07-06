@@ -23,22 +23,18 @@
     </dependency>
     </dependencies>
 <build>
-   <plugins>
+  <plugins>
      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-           <artifactId>maven-compiler-plugin</artifactId>
-	    <version>3.6.1</version>
-	       <configuration>
-	           <source>1.8</source>
-	           <target>1.8</target>
-	       </configuration>
-      </plugin>
-    </plugins>
-</build>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.6.1</version>
+        <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+        </configuration>
+    </plugin>
 
-<reporting>
-  <plugins>
-	<!-- Normally, we take off the dependency report, saves time. -->
+  	<!-- Normally, we take off the dependency report, saves time. -->
 	<plugin>
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-project-info-reports-plugin</artifactId>
@@ -55,9 +51,9 @@
 			<formats>
 				<format>xml</format>
 			</formats>
-		</configuration>
+	    </configuration>
 	</plugin>
 
-   </plugins>
-</reporting>
+  </plugins>
+ </build> 
 </project>
